@@ -1,0 +1,27 @@
+div {
+    position: relative;
+    padding: 10px;
+    outline: 1px solid red;
+    height: 200px;
+}
+div div {
+    outline: 1px solid green;
+    width: 50px;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    right: -20px;
+}
+li {
+    position: relative;
+}
+p {
+    position: relative;
+    outline: 1px solid orange;
+}
+strong {
+    color: red;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
