@@ -2,12 +2,21 @@ header {
     background-color: wheat;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: flex-start;
+    /* background-image: url("../colibri.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
 }
 header div {
     outline: 1px dotted red;
 }
-div.especial {
-    font-size: 2em;
+.especial {
+    flex-grow: 10;
+}
+.segundo {
+    background-color: yellow;
+    align-self: stretch;
 }

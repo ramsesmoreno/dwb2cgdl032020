@@ -1,6 +1,30 @@
 .productos {
-    display: grid;
-    grid-template-columns: 100px 200px auto;
-    grid-template-rows: 20px 200px auto;
-    grid-gap: 40px 30px;
+  outline: 1px dotted green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-gap: 10px;
+  height: 50vh;
+  grid-auto-flow: row dense;
+  grid-template-areas: "encabezado encabezado encabezado"
+                       "lateral contenido contenido"
+                       "pie pie pie" ;
+}
+.productos div {
+    outline: 1px dotted blue;
+}
+.especial {
+    padding: 1em;
+    background-color: yellow;
+    grid-area: contenido;
+}
+#celda-g {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#celda-h {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-color: rgba(0, 0, 255, 0.5);
 }
