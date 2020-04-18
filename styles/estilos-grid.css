@@ -1,0 +1,6 @@
+.productos {
+    display: grid;
+    grid-template-columns: 100px 200px auto;
+    grid-template-rows: 20px 200px auto;
+    grid-gap: 40px 30px;
+}

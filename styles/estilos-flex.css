@@ -1,0 +1,13 @@
+header {
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+header div {
+    outline: 1px dotted red;
+}
+div.especial {
+    font-size: 2em;
+}
