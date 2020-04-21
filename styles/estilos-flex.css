@@ -5,10 +5,10 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    /* background-image: url("../colibri.png");
+    background-image: url("../colibri.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; */
+    background-position: center;
 }
 header div {
     outline: 1px dotted red;

@@ -1,0 +1,58 @@
+h1 {
+    color: blue;
+}
+figure img {
+    width: 100%;
+}
+figure {
+    margin: 0;
+    padding: 0.5em;
+}
+.imagenes {
+    display: flex;
+    background-color: yellow;
+    flex-direction: column;
+}
+nav {
+    display: none;
+}
+@media all and (min-width: 720px) {
+    .imagenes {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    figure {
+        width: 40%;
+    }
+}
+@media all and (min-width: 960px) {
+    .imagenes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 100px);
+    }
+    nav {
+        display: block;
+    }
+    figure {
+        width: 30%;
+    }
+}
+.otraforma {
+    text-align: center;
+}
+.otraforma img {
+    width: 10em;
+    margin: 0.5em;
+}
+body {
+    font-family: 'Baloo Paaji 2', cursive;
+    background-image: linear-gradient(blue, yellow);
+}
+h1 {
+    font-family: 'Indie Flower', cursive;
+}
+.fas {
+    font-size: 10em;
+    color: red;
+}
