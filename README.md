@@ -9,3 +9,24 @@ Material Icons:
 https://google.github.io/material-design-icons/
 Font awesome:
 https://fontawesome.com/
+
+
+### Frameworks de CSS
+* https://getbootstrap.com/
+* https://materializecss.com/
+* https://get.foundation/
+* https://getuikit.com/
+* https://tailwindcss.com/
+
+### Imágenes de Stock
+Comerciales
+* https://stock.adobe.com/
+* https://www.istockphoto.com/
+* https://www.gettyimages.com.mx/
+* https://www.shutterstock.com/
+Gratuitas
+* https://pixabay.com/
+* https://unsplash.com/
+* https://www.pexels.com/
+Al azar
+* https://picsum.photos/
