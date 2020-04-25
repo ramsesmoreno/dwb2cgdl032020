@@ -25,3 +25,6 @@ body {
     color: purple;
     font-size: 1rem;
 }
+.productos div {
+    color: red;
+}
