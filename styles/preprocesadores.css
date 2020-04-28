@@ -1,0 +1,57 @@
+.fuente, div#principal, div#obscuro, div#claro {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: orange;
+}
+
+div {
+  padding: 1em;
+}
+
+div#principal {
+  border-radius: 1em;
+  border: 0.125em solid #00ff66;
+  background-color: #00ff66;
+}
+
+div#obscuro {
+  border-radius: 1em;
+  border: 0.125em solid #00ff66;
+  background-color: #00993d;
+}
+
+div#claro {
+  border-radius: 2em;
+  border: 0.25em solid #00ff66;
+  background-color: #ccffe0;
+}
+
+section {
+  background-color: #ccffe0;
+}
+
+section ul li {
+  color: #00ff66;
+}
+
+section p {
+  color: #00993d;
+  font-size: 20px;
+}
+
+section p > strong {
+  color: red;
+}
+
+section p span {
+  background-color: yellow;
+}
+
+section p span.resaltado {
+  color: blue;
+  font-size: 2em;
+}
+/*# sourceMappingURL=preprocesadores.css.map */

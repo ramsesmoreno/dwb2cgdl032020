@@ -30,3 +30,8 @@ Gratuitas
 * https://www.pexels.com/
 Al azar
 * https://picsum.photos/
+
+
+### Preprocesadores
+Funciones de color de SCSS/SASS:
+* https://sass-lang.com/documentation/modules/color
