@@ -35,3 +35,9 @@ Al azar
 ### Preprocesadores
 Funciones de color de SCSS/SASS:
 * https://sass-lang.com/documentation/modules/color
+
+#### Especial de Bootstrap
+> Descargando bootstrap para compilación en local
+1. Instalar Bootstrap con npm: https://getbootstrap.com/docs/4.4/getting-started/download/#npm
+2. Instalar las dependencias: `cd node_modules/bootstrap` `npm install`
+3. Preparar las instalaciones según https://getbootstrap.com/docs/4.4/getting-started/build-tools/#tooling-setup
