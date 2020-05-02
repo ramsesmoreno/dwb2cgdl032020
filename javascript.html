@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        .resaltar {
+            transition: all 3s;
+            background-color: burlywood;
+            color: blue;
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">Javascript <small>ejemplo 2</small></h1>
+    <button id="elBoton">Botón</button>
+    <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam nam, cupiditate sequi reprehenderit dignissimos vitae dolore harum doloribus labore minima officiis repudiandae, ipsam minus molestiae. Illo ex inventore incidunt.</p>
+    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam <strong>sequi</strong>nam, cupiditate <strong>sequi</strong> reprehenderit dignissimos vitae dolore harum doloribus labore minima officiis repudiandae, ipsam minus molestiae. Illo ex inventore incidunt.</p>
+    <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam nam, cupiditate sequi reprehenderit dignissimos vitae dolore harum doloribus labore minima officiis repudiandae, ipsam minus molestiae. Illo ex inventore incidunt.</p>
+    <p id="sensible">Sensible Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam nam, cupiditate sequi reprehenderit dignissimos vitae dolore harum doloribus labore minima officiis repudiandae, ipsam minus molestiae. Illo ex inventore incidunt.</p>
+    <button id="cambiaSensible">Cambiar</button>
+    <script>
+        var miTitulo = document.getElementById('principal')
+
+        function cambiarTitulo(elTitulo='Nuevo título') {
+            miTitulo.innerHTML = elTitulo;
+            miTitulo.style.position = 'fixed';
+            miTitulo.style.right = 20;
+            miTitulo.style.opacity = .5;
+        }
+
+        miTitulo.addEventListener(
+            'mouseover',
+            function (e) {
+                console.log(e)
+                cambiarTitulo('Cambio por evento ' + e.type)
+            }
+        );
+        document.getElementById('elBoton').addEventListener(
+            'click',
+            function (e) {
+                console.log(e)
+                cambiarTitulo('Cambio por evento ' + e.type)
+            }
+        );
+
+        // Por clase
+        var losParrafos = document.getElementsByClassName('parrafo')
+        for (var i in losParrafos) {
+            losParrafos[i].innerHTML = 'Párrafo cambiado ' + i;
+        }
+        console.log( losParrafos );
+
+        // Por selector
+        var ElStrongDentroDeParrafor = document.querySelector('p strong')
+        ElStrongDentroDeParrafor.style.backgroundColor = '#ffff00'
+        ElStrongDentroDeParrafor.style.color = '#ff0000'
+        console.log( ElStrongDentroDeParrafor );
+
+        var sensible = document.getElementById('sensible')
+        document.getElementById('cambiaSensible').addEventListener('click', function () {
+            sensible.classList.toggle('resaltar')
+        })
+    </script>
+</body>
+</html>
