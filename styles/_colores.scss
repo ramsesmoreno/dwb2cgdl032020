@@ -26,11 +26,19 @@ section {
     p {
         color: darken($colorprincipal, 20);
         font-size: 20px;
+        @media all and (max-width: 640px) {
+            font-size: 10px;
+        }
         > strong {
             color: red;
         }
         span {
-            background-color: yellow;
+            background-color: orange;
+            display: block;
+            @media all and (max-width: 640px) {
+                background-color: lightblue;
+                @include redondea();
+            }
             &.resaltado {
                 color: blue;
                 font-size: 2em;

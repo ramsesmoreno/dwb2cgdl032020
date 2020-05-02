@@ -42,12 +42,27 @@ section p {
   font-size: 20px;
 }
 
+@media all and (max-width: 640px) {
+  section p {
+    font-size: 10px;
+  }
+}
+
 section p > strong {
   color: red;
 }
 
 section p span {
-  background-color: yellow;
+  background-color: orange;
+  display: block;
+}
+
+@media all and (max-width: 640px) {
+  section p span {
+    background-color: lightblue;
+    border-radius: 1em;
+    border: 0.125em solid #00ff66;
+  }
 }
 
 section p span.resaltado {
