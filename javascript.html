@@ -12,6 +12,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.0/moment-with-locales.min.js"></script>
 </head>
 <body>
     <h1 id="principal">Javascript <small>ejemplo 2</small></h1>
@@ -21,6 +22,7 @@
     <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam nam, cupiditate sequi reprehenderit dignissimos vitae dolore harum doloribus labore minima officiis repudiandae, ipsam minus molestiae. Illo ex inventore incidunt.</p>
     <p id="sensible">Sensible Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam nam, cupiditate sequi reprehenderit dignissimos vitae dolore harum doloribus labore minima officiis repudiandae, ipsam minus molestiae. Illo ex inventore incidunt.</p>
     <button id="cambiaSensible">Cambiar</button>
+    <h2>Aquí la fecha</h2>
     <script>
         var miTitulo = document.getElementById('principal')
 
@@ -63,6 +65,13 @@
         document.getElementById('cambiaSensible').addEventListener('click', function () {
             sensible.classList.toggle('resaltar')
         })
+
+        // Moment
+        var laFecha = document.querySelector('h2')
+        var ahora = moment()
+        ahora.locale('es')
+        laFecha.innerHTML = ahora.format('dddd, MMMM D YYYY, h:mm:ss a')
+        
     </script>
 </body>
 </html>
